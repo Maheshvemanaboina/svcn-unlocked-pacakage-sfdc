@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Helpdesk_Case</fullName>
+    <active>true</active>
+    <businessProcess>Helpdesk Support Process</businessProcess>
+    <compactLayoutAssignment>Helpdesk_Case_Compact</compactLayoutAssignment>
+    <description>Helpdesk Case</description>
+    <label>Helpdesk Case</label>
+    <picklistValues>
+        <picklist>Access_Type__c</picklist>
+        <values>
+            <fullName>Existing User Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing User Deactivation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Segment__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adult Nutrition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BMP %26 Liquids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Butter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CD Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheese Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Dairy Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Early Life Nutrition %26 Cell Nutrition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCI Innovation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HoB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lattiz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MENA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malaysia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Milkpowder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nigeria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philippines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR EU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rest of Sub Saharan Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rest of World</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwest Europe %28Spain%2C Italy%2C France%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK%26I</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Segment_new_helpdesk__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adult Nutrition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BMP %26 Liquids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BeLux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Butter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CD Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Dairy Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DACH Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLMI %28Malaysia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Early Life Nutrition %26 Cell Nutrition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth Markets - France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth Markets - Future Markets Europe %26 B2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth Markets - Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth Markets - Latin - America%2FPacific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth Markets - North America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth Markets - Spain %28incl%2E Canarias and Millan Vincente%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth Markets - UK %26 Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth Markets - Zijerveld Int%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HoB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hungary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lattiz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MENA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malaysia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middle East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Milkpowder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands - Branded NL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands - OOH NL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nigeria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pakistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philippines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philippines AMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR EU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rest of Sub Saharan Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rest of World</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwest Europe %28Spain%2C Italy%2C France%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thailand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK%26I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vietnam</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Unit__c</picklist>
+        <values>
+            <fullName>Asia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %26 Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialised Nutrition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trading</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CPQ_License__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CPQ_Sub_Support_Types__c</picklist>
+        <values>
+            <fullName>Bill of Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Creation%2FCloning%2FEditing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing%2FFreight Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product%2FServices%2FListing Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote%2FPricelist Approval %28Commercial Approval%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote%2FPricelist Creation%2FCloning%2FEditing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote%2FPricelist Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System%2FEmail Notifications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Category__c</picklist>
+        <values>
+            <fullName>CHG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Closer_Reason__c</picklist>
+        <values>
+            <fullName>Case Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response from Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Reproducible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Successfully Provisioned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Record_Type__c</picklist>
+        <values>
+            <fullName>Adult Nutrition_TSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELN%26CN_TSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F%26B_TSS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Community_Type__c</picklist>
+        <values>
+            <fullName>Customer Community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor Community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Community</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FC_Role__c</picklist>
+        <values>
+            <fullName>Branding and Communication Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CKA Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CKA Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Excellence Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demand Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demand Planner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director FInance FCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director R%26D FCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managing Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OFO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>President FCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procurement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Developer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Group Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QA Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Associate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R%26D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Chain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Sales Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_Type__c</picklist>
+        <values>
+            <fullName>Incident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Locale__c</picklist>
+        <values>
+            <fullName>Chinese %28Simplified%2C China%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese %28Traditional%2C Taiwan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dutch %28Netherlands%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English %28Australia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English %28Canada%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English %28United Kingdom%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English %28United States%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French %28Canada%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French %28France%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German %28Germany%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian %28Italy%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese %28Japan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese %28Brazil%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish %28Mexico%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish %28Spain%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Low</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Case Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greater China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latin America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Root_Cause__c</picklist>
+        <values>
+            <fullName>Change Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Code Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Import%2FDiscrepancy Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deployment Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Permissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middleware Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reports %26 Dashboards Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP ECC Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Platform Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Permission Misconfiguration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Training and Adoption</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SLA_Picklist__c</picklist>
+        <values>
+            <fullName>Miss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warning</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Support_Type__c</picklist>
+        <values>
+            <fullName>Access %26 License Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accounts %26 Contact Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community  Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dashboard%2FReporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Sales Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quoting %26 Pricing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Time_Zone__c</picklist>
+        <values>
+            <fullName>%28GMT%29 Greenwich Mean Time%3A Dublin%2C Edinburgh%2C Lisbon%2C London</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B01%3A00%29 Amsterdam%2C Berlin%2C Brussels%2C Copenhagen%2C Madrid%2C Paris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B02%3A00%29 Athens%2C Bucharest%2C Istanbul%2C Jerusalem%2C Helsinki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B03%3A00%29 Moscow%2C St%2E Petersburg%2C Volgograd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B03%3A30%29 Tehran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B04%3A00%29 Abu Dhabi%2C Muscat%2C Baku%2C Tbilisi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B04%3A30%29 Kabul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B05%3A00%29 Ekaterinburg%2C Islamabad%2C Karachi%2C Tashkent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B05%3A30%29 Chennai%2C Kolkata%2C Mumbai%2C New Delhi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B05%3A45%29 Kathmandu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B06%3A00%29 Almaty%2C Dhaka%2C Colombo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B06%3A30%29 Yangon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B07%3A00%29 Bangkok%2C Hanoi%2C Jakarta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B08%3A00%29 Beijing%2C Perth%2C Singapore%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B09%3A00%29 Tokyo%2C Seoul%2C Osaka%2C Sapporo%2C Yakutsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B09%3A30%29 Adelaide%2C Darwin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B10%3A00%29 Brisbane%2C Melbourne%2C Sydney%2C Guam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B11%3A00%29 Magadan%2C Solomon Islands%2C New Caledonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B12%3A00%29 Fiji%2C Kamchatka%2C Marshall Islands%2C Wellington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-01%3A00%29 Azores%2C Cape Verde Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-02%3A00%29 Mid-Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-03%3A00%29 Brasilia%2C Buenos Aires%2C Georgetown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-03%3A30%29 Newfoundland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-04%3A00%29 Atlantic Time %28Canada%29%2C Caracas%2C La Paz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-05%3A00%29 Eastern Time %28US and Canada%29%2C Bogota%2C Lima</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-06%3A00%29 Central Time %28US and Canada%29%2C Mexico City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-07%3A00%29 Arizona%2C Mountain Time %28US and Canada%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-08%3A00%29 Pacific Time %28US and Canada%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-09%3A00%29 Alaska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-10%3A00%29 Hawaii</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-11%3A00%29 Midway Island%2C Samoa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-12%3A00%29 International Date Line West</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FC Internal Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not grounded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order handling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Make</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Third Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remaining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S%26OP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>User_Profile__c</picklist>
+        <values>
+            <fullName>FCI Customer Community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCI Disti Community User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCI Disti Restricted User</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>User_Type__c</picklist>
+        <values>
+            <fullName>Community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-System Admin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Admin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
